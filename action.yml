@@ -1,0 +1,27 @@
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
+
+name: 'Large File Detector'
+description: 'Detects files larger than a specified limit.'
+author: 'Anzul Aqeel'
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: true
+    default: '${{ github.token }}'
+  max_size_mb:
+    description: 'Max size in MB'
+    default: '1'
+  fail_on_error:
+    description: 'Fail build on error'
+    default: 'true'
+  ignore_patterns:
+    description: 'Patterns to ignore'
+    default: ''
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'hard-drive'
+  color: 'red'
+
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
